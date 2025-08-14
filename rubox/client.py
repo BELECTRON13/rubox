@@ -218,7 +218,7 @@ class Client:
 
             msg_data["message_id"] = str(msg_data.get("message_id", ""))
             msg_data["chat_id"] = chat_id
-            msg_data["_client"] = self  # اضافه کردن client به message data
+            msg_data["_client"] = self
             self._detect_chat_type(msg_data, chat_id)
             return {
                 "type": update_type,
@@ -544,4 +544,5 @@ class Client:
         elif chat_id.startswith("c0"):  # Channel
             msg["chat_type"] = "Channel"
         else:
+
             msg["chat_type"] = "Unknown"
