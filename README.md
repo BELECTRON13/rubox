@@ -30,10 +30,25 @@ async def main():
 asyncio.run(main())		
 ```
 
+### 👾 Minimal example
+```python
+from rubox import Client
+import asyncio
+
+TOKEN = "BOT-TOKEN"
+
+async def main():
+	async with Client(TOKEN) as app:
+		await app.send_message('chat_id', 'Hello from **Rubox**!')
+		
+asyncio.run(main())
+```
+
 ###  📦 Installation
 ```bash
 pip install -U rubox
 ```
+
 
 
 
