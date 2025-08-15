@@ -30,6 +30,10 @@ async def main():
 asyncio.run(main())		
 ```
 
+###  📦 Installation
+```bash
+pip install -U rubox
+```
 
 
 
