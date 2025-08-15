@@ -11,7 +11,7 @@
 
 ---
 
-### 🛠 Simple example
+### 🛠 Simple Example
 ```python
 from rubox import Client
 from rubox.filters import commands
@@ -30,7 +30,7 @@ async def main():
 asyncio.run(main())		
 ```
 
-### 👾 Minimal example
+### 👾 Minimal Example
 ```python
 from rubox import Client
 import asyncio
@@ -44,10 +44,16 @@ async def main():
 asyncio.run(main())
 ```
 
+### 🌐 Webhook Setup
+```python
+
+```
+
 ###  📦 Installation
 ```bash
 pip install -U rubox
 ```
+
 
 
 
