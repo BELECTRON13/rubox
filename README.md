@@ -21,7 +21,7 @@ TOKEN = "BOT-TOKEN"
 
 async def main():
 	async with Client(TOKEN) as app:
-		@app.on_message(commands('start', 'help'))
+		@app.on_message(commands(['start', 'help']))
 		async def start_handler(message):
 			await message.reply('Hello from Rubox!')
 			
@@ -72,6 +72,7 @@ asyncio.run(main())
 ```bash
 pip install -U rubox
 ```
+
 
 
 
